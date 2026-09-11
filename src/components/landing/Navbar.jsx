@@ -46,7 +46,7 @@ const Navbar = () => {
               <>
                 <Image width={40} preview={false} src={''} />
                 <b>
-                  <span className="text-blue-500">App Name</span>{' '}
+                  <span className="text-green-800">BPSKu</span>{' '}
                 </b>
               </>
             )}
@@ -62,8 +62,14 @@ const Navbar = () => {
         )}
       </div>
       <div className="flex items-center justify-end gap-x-4">
-        <Button variant="solid" color="primary" icon={<UserOutlined />} onClick={() => navigate('/auth/login')}>
-          Masuk
+        <Button
+            type="primary"
+            icon={<UserOutlined />}
+            onClick={() => navigate('/auth/login')}
+            style={{ backgroundColor: '#228b22', borderColor: '#228b22' }}
+            className="hover:!bg-green-700 hover:!border-green-700"
+          >
+            Masuk
         </Button>
       </div>
     </div>
